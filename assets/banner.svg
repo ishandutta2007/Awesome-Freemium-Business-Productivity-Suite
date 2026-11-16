@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="40%" stop-color="#0e172a"/>
+      <stop offset="80%" stop-color="#141c38"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e0e7ff"/>
+      <stop offset="70%" stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#a5b4fc"/>
+    </linearGradient>
+
+    <linearGradient id="subtext-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Filter for soft glow -->
+    <filter id="blur-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+    </filter>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+      50% { transform: scale(1.15) translate(25px, -20px); opacity: 0.85; }
+      100% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+    }
+    @keyframes pulseOrb2 {
+      0% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+      50% { transform: scale(1.2) translate(-30px, 20px); opacity: 0.75; }
+      100% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+    }
+    @keyframes floatPill1 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes floatPill2 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .orb-anim-1 {
+      animation: pulseOrb 9s ease-in-out infinite;
+      transform-origin: 300px 150px;
+    }
+    .orb-anim-2 {
+      animation: pulseOrb2 11s ease-in-out infinite;
+      transform-origin: 900px 250px;
+    }
+    .pill-1 { animation: floatPill1 5s ease-in-out infinite; }
+    .pill-2 { animation: floatPill2 6s ease-in-out infinite; }
+    .pill-3 { animation: floatPill1 7s ease-in-out infinite; }
+    .flowing-path {
+      stroke-dasharray: 20 10;
+      animation: flowLine 25s linear infinite;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="420" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="420" rx="16" fill="url(#grid)"/>
+
+  <!-- Dynamic Glowing Orbs in the Background (Behind text) -->
+  <g>
+    <circle class="orb-anim-1" cx="260" cy="130" r="170" fill="url(#primary-glow)" filter="url(#blur-glow)"/>
+    <circle class="orb-anim-2" cx="960" cy="240" r="190" fill="url(#cyan-glow)" filter="url(#blur-glow)"/>
+  </g>
+
+  <!-- Dynamic Animated Subtle Circuit / Flow Lines (Background) -->
+  <g opacity="0.45">
+    <path class="flowing-path" d="M -50 80 Q 300 20 600 90 T 1250 50" fill="none" stroke="#6366f1" stroke-width="2"/>
+    <path class="flowing-path" d="M -50 360 Q 350 400 700 330 T 1250 370" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+    <circle cx="150" cy="80" r="3.5" fill="#818cf8"/>
+    <circle cx="600" cy="90" r="3.5" fill="#38bdf8"/>
+    <circle cx="1050" cy="62" r="3.5" fill="#c084fc"/>
+    <circle cx="200" cy="375" r="3.5" fill="#38bdf8"/>
+    <circle cx="700" cy="330" r="3.5" fill="#818cf8"/>
+  </g>
+
+  <!-- Foreground Title and Core Branding (Protected & Centered) -->
+  <!-- Top Category Tag -->
+  <g transform="translate(600, 75)" text-anchor="middle">
+    <rect x="-185" y="-18" width="370" height="34" rx="17" fill="#1e1b4b" fill-opacity="0.8" stroke="#4f46e5" stroke-width="1.2"/>
+    <text y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#a5b4fc" letter-spacing="2">✨ CURATED OPEN ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="150" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="url(#text-grad)" letter-spacing="-0.5">
+    Business Productivity Suite
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="200" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="url(#subtext-grad)" letter-spacing="0.2">
+    Freemium SaaS Workspaces • Self-Hosted Office Suites • Digital Sovereignty
+  </text>
+
+  <!-- Description Line -->
+  <text x="600" y="235" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#94a3b8">
+    Tracking generous free tiers, enterprise SaaS leaders &amp; privacy-first sovereign alternatives
+  </text>
+
+  <!-- Dynamic Foreground Floating Pills / Feature Cards (Nicely balanced along bottom) -->
+  <g transform="translate(130, 290)">
+    <!-- Pill 1: SaaS Leaders -->
+    <g class="pill-1" filter="url(#card-shadow)">
+      <rect width="210" height="58" rx="12" fill="#0f172a" fill-opacity="0.85" stroke="url(#card-border)" stroke-width="1.2"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">🏢 Enterprise SaaS</text>
+      <text x="20" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">M365 • Google • Lark • Zoho</text>
+    </g>
+
+    <!-- Pill 2: Open Source Sovereignty -->
+    <g class="pill-2" transform="translate(240, 0)" filter="url(#card-shadow)">
+      <rect width="225" height="58" rx="12" fill="#0f172a" fill-opacity="0.85" stroke="url(#card-border)" stroke-width="1.2"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#38bdf8">🛡️ Digital Sovereignty</text>
+      <text x="20" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">Nextcloud • Collabora • OnlyOffice</text>
+    </g>
+
+    <!-- Pill 3: Modular & Encrypted -->
+    <g class="pill-3" transform="translate(495, 0)" filter="url(#card-shadow)">
+      <rect width="225" height="58" rx="12" fill="#0f172a" fill-opacity="0.85" stroke="url(#card-border)" stroke-width="1.2"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#c084fc">⚡ Modular &amp; E2EE</text>
+      <text x="20" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">AppFlowy • AFFiNE • CryptPad</text>
+    </g>
+
+    <!-- Pill 4: Zero License Trap -->
+    <g class="pill-1" transform="translate(750, 0)" filter="url(#card-shadow)">
+      <rect width="190" height="58" rx="12" fill="#0f172a" fill-opacity="0.85" stroke="url(#card-border)" stroke-width="1.2"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#34d399">💰 Zero Seat Tax</text>
+      <text x="20" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">Permanent free tiers &amp; OSS</text>
+    </g>
+  </g>
+</svg>
