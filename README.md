@@ -1,6 +1,6 @@
 # Awesome-Freemium-Business-Productivity-Suite
 
-# Top Freemium Business Productivity Suite Ecosystem
+## Top Freemium Business Productivity Suite Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Free-Tier Office Suites, Self-Hosted Collaboration & Digital Sovereignty*  
