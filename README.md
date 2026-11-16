@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=iithub" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Freemium-Business-Productivity-Suite/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Freemium-Business-Productivity-Suite?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Freemium-Business-Productivity-Suite/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Freemium-Business-Productivity-Suite?style=social" alt="GitHub_Stars" /></a>
   <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -63,7 +63,7 @@ The global business productivity software market is valued at approximately **$1
 
 ## 💻 Open-Source GitHub Projects
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** | [![Stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers) | **The leading privacy-first, open-source Notion alternative.** Built with Flutter and Rust, AppFlowy offers customizable notes, wikis, database boards, and project management with local-first encryption, community plugins, and self-hosted sync. 🦀 |
 | **[AFFiNE](https://github.com/toeverything/AFFiNE)** | [![Stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers) | **All-in-one workspace uniting docs, whiteboards, and database tables.** Features a true dual-mode canvas where text documents transform instantly into infinite whiteboard canvases for collaborative planning and knowledge management. 🎨 |
@@ -118,3 +118,12 @@ If you find this repository valuable, please consider supporting the project:
 
 **Made with ❤️ for IT administrators, operations teams, and organizations building productivity infrastructure.**  
 Let's make business productivity suites more open, sovereign, and cost-predictable. 🚀
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Freemium-Business-Productivity-Suite&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Freemium-Business-Productivity-Suite_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Freemium-Business-Productivity-Suite_growth.svg">
+  </picture>
+</a>
